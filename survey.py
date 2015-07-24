@@ -12,7 +12,7 @@ def index():
 @app.route('/profile', methods=['POST'])
 def profile():
     """Return results from profile form."""
-
+    print request.form
     fullname = request.form['name']
     age = request.form['age']
     occupation = request.form['occupation']
